@@ -23,8 +23,7 @@ namespace eRestaurant.Framework.Entities
         public virtual Waiter Waiter { get; set; }
         public virtual Table Table { get; set; }
         public virtual ICollection<BillItem> Items { get; set; }
-        //public virtual Waiter Waiter { get; set; }
-        public virtual Table Table { get; set; }
+
 
         public Bill()
         {
