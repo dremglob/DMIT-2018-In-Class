@@ -12,6 +12,9 @@ namespace eRestaurant.Framework.Entities
     {
         [Key] // This attribute identifies the menucategoryid property as mapping to a primary key
         public int MenuCategoryID { get; set; }
+
+        [Required(ErrorMessage = "A Description is required (5-35 characters)")]
+        [StringLength(35, MinimumLength = 5, ErrorMessage = "Descriptions must be from 5 to 35 characters in length")]
         public string Description { get; set; }
 
         // Navigation Property
